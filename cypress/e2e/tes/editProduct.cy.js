@@ -21,7 +21,7 @@ describe("User mengedit item", () => {
     cy.get(".css-13c7rae").contains("ubah").click();
     const kategori = cy.get("#kategori");
     kategori.click();
-    cy.get("table").contains("Umum").click();
+    cy.get("table").contains("Sembako").click();
     const buttonSimpan = cy.get("button").contains("simpan");
     buttonSimpan.click();
     cy.url().should("include", "/products");

@@ -34,7 +34,7 @@ describe("add product", () => {
     hargaJual.type("13000");
     stok.type("20").clear().type(20);
     kategori.click();
-    cy.get("table").contains("Sembako").click();
+    cy.get("table").contains("Umum").click();
     buttonSimpan.click();
     cy.url().should("include", "/products");
     cy.get(".css-tidvy5").should("have.text", "success");
